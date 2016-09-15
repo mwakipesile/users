@@ -1,0 +1,11 @@
+<ul>
+  <li>Name: <%= @name %></li>
+  <li>email: <%= @email %></li>
+  <li>Interests:
+    <ul>
+      <% @interests.each do |interest| %>
+      <li><%= interest.capitalize %></li>
+      <% end %>
+    </ul>
+  </li>
+</ul>
